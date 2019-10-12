@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <PackageId>AspNetCore.OData.Sum</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Kirill Amurskiy</Authors>
+        <Company>Amursoft</Company>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    </ItemGroup>
+</Project>

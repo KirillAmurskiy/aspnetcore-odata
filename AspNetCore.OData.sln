@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.OData.Sum", "AspNetCore.OData.Sum\AspNetCore.OData.Sum.csproj", "{E437D55E-C404-46E9-9F26-D105632D985C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OData.Client.Extensions", "OData.Client.Extensions\OData.Client.Extensions.csproj", "{EF83429F-FDF8-4B57-B611-4AE97FE1FE7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E437D55E-C404-46E9-9F26-D105632D985C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E437D55E-C404-46E9-9F26-D105632D985C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E437D55E-C404-46E9-9F26-D105632D985C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E437D55E-C404-46E9-9F26-D105632D985C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF83429F-FDF8-4B57-B611-4AE97FE1FE7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF83429F-FDF8-4B57-B611-4AE97FE1FE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF83429F-FDF8-4B57-B611-4AE97FE1FE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF83429F-FDF8-4B57-B611-4AE97FE1FE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
