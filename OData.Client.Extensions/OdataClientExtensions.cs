@@ -14,6 +14,25 @@ namespace OData.Client.Extensions
     {
         private const string TotalSum = "TotalSum";
 
+        public static async Task<bool> ODataAnyAsync<TEntity>(this IQueryable<TEntity> query)
+        {
+            try
+            {
+                return (await query.ExecuteAsync()).Any();
+            }
+            catch (DataServiceQueryException e)
+            {
+                if (e.InnerException is DataServiceClientException clientE)
+                {
+                    if (clientE.StatusCode == 404) // NotFound
+                    {
+                        return false;
+                    }
+                }
+                throw;
+            }
+        }
+        
         public static async Task<QueryOperationResponse<TEntity>> ExecuteAsync<TEntity>(this DataServiceQueryContinuation<TEntity> continuation, DataServiceContext context)
         {
             return (QueryOperationResponse<TEntity>)await context.ExecuteAsync(continuation);
